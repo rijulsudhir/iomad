@@ -268,7 +268,7 @@ if ($frm and isset($frm->username)) {                             // Login WITH 
                         if (empty($mycompanyrec->hostname)) {
                             $companyurl = $CFG->wwwrootdefault;
                         } else {
-                            $companyurl = $_SERVER['REQUEST_SCHEME'] . "://" . $mycompanyrec->hostname;
+                            $companyurl = $_SERVER['REQUEST_SCHEME'] . "://" . $currentcompany->hostname;
                         }
                     }
                     $SESSION->currenteditingcompany = $mycompany->id;
